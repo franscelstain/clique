@@ -123,15 +123,6 @@
 			link.classList.remove('active');
 		});
 
-		console.log('about: ' + section2)
-		console.log('services: ' + section3)
-		console.log('talks: ' + section4)
-		console.log('team: ' + section5)
-		console.log('membership: ' + section6)
-		console.log('insight: ' + section7)
-		console.log('contact: ' + section8)
-		console.log(scrollPosition)
-
 		if (scrollPosition < section2) {
 			navLinks[0].classList.add('active');
 		} else if (scrollPosition >= section2 && scrollPosition < section3) {
@@ -188,7 +179,6 @@
 		if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 			var target = $(this.hash);
 			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			console.log(target)
 			if (target.length) {
 				e.preventDefault();
 				$('html, body').animate({
